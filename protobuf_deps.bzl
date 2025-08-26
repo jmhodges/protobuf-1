@@ -60,6 +60,7 @@ def protobuf_deps():
     if not native.existing_rule("rules_proto"):
         http_archive(
             name = "rules_proto",
+            sha256 = "FKIlhwq06RhpZSz9ae8gKCd/wdxJENZdNTti1uCuIfQ=",
             strip_prefix = "rules_proto-7.1.0",
             url = "https://github.com/bazelbuild/rules_proto/releases/download/7.1.0/rules_proto-7.1.0.tar.gz",
         )
